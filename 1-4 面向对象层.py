@@ -7,7 +7,7 @@ def activate_relu(inputs):
 
 
 # 定义层类
-class layer:
+class Layer:
     def __init__(self, n_input, n_neurons):
         self.weights = np.random.randn(n_input, n_neurons)
         self.bias = np.random.randn(n_neurons)
@@ -41,13 +41,13 @@ inputs = np.array([[a11, a12],
 print("输入为:", inputs)
 
 # 第一层
-layer1 = layer(2, 3)
+layer1 = Layer(2, 3)
 
 # 第二层
-layer2 = layer(3, 4)
+layer2 = Layer(3, 4)
 
 # 第三层
-layer3 = layer(4, 2)
+layer3 = Layer(4, 2)
 
 # 第一层运算
 output1 = layer1.layer_forward(inputs)
