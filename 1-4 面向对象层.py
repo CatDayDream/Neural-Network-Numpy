@@ -1,10 +1,12 @@
 import numpy as np
 
 
+# 定义激活函数
 def activate_relu(inputs):
     return np.maximum(0, inputs)
 
 
+# 定义层类
 class layer:
     def __init__(self, n_input, n_neurons):
         self.weights = np.random.randn(n_input, n_neurons)
