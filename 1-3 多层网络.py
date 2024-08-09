@@ -65,3 +65,4 @@ print("第二层输出为：", output2)
 sum3 = np.dot(output2, weights3) + bias3
 output3 = activate_relu(sum3)
 print("第三层输出为：", output3)
+
